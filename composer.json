@@ -1,0 +1,63 @@
+{
+    "name": "astermd/checkoutchamp-client",
+    "description": "Unofficial PHP client for the Checkout Champ API: orders, leads, upsales, campaigns, customers, transactions and lander clicks, with opt-in redacted request logging.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "checkoutchamp",
+        "checkout-champ",
+        "api-client",
+        "rest-client",
+        "crm",
+        "ecommerce",
+        "orders",
+        "payments"
+    ],
+    "authors": [
+        {
+            "name": "AsterMD",
+            "email": "info@astermd.com"
+        }
+    ],
+    "support": {
+        "email": "info@astermd.com",
+        "issues": "https://github.com/astermd/checkoutchamp-client/issues",
+        "source": "https://github.com/astermd/checkoutchamp-client"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.2",
+        "phpunit/phpunit": "^12.0",
+        "squizlabs/php_codesniffer": "^3.13"
+    },
+    "autoload": {
+        "psr-4": {
+            "AsterMD\\CheckoutChampClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AsterMD\\CheckoutChampClient\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs",
+        "lint:fix": "phpcbf",
+        "analyse": "phpstan analyse",
+        "test": "phpunit",
+        "gate": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

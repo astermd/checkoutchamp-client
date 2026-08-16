@@ -1,0 +1,15 @@
+# Keep the Composer dist tarball to runtime code only.
+/tests                  export-ignore
+/.github                export-ignore
+/.gitattributes         export-ignore
+/.gitignore             export-ignore
+/CLAUDE.md              export-ignore
+/phpcs.xml.dist         export-ignore
+/phpstan.neon.dist      export-ignore
+/phpunit.xml.dist       export-ignore
+/Dockerfile             export-ignore
+/docker-compose.yml     export-ignore
+/Makefile               export-ignore
+
+# Normalise line endings.
+* text=auto eol=lf
